@@ -1,0 +1,64 @@
+.carousel-caption > h3{
+    font-family: 'Stencil';
+    color: white;
+}
+.carousel-indicators > li {
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+  }
+
+  .img-logo {
+      min-width: 175px;
+  }
+
+  .carousel-caption {
+    left: 5%;
+    right: auto;
+    text-align: left;
+    padding:5px;
+    top: 37vh;
+    bottom: auto;
+    > h3 {
+        font-size: 66px;
+    }
+  }
+
+  .carousel-item {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .welcome {
+      h1 {
+          font-size: 65px;
+          margin-bottom: 65px;
+      }
+      h3 {
+          font-size: 30px;
+          font-weight: 500 !important;
+          margin-bottom: 65px;
+          line-height: 40px;
+      }
+      .btn-more {
+          font-weight: 500;
+    }
+}
+
+.bg-nav {
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    background-position: right;
+}
+
+.nav-item {
+    .nav-link {
+        font-family: 'Karla-Regular';
+        font-size: 13px;
+        line-height: 15.6px;
+        color: white !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
