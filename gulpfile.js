@@ -49,6 +49,12 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
+  // swiperjs
+  var swiperjs = gulp.src('./node_modules/swiper/js/*')
+    .pipe(gulp.dest('./vendor/swiper/js'));
+  // swiperCss
+  var swipercss = gulp.src('./node_modules/swiper/css/*')
+    .pipe(gulp.dest('./vendor/swiper/css'));
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
     .pipe(gulp.dest('./vendor/bootstrap'));
@@ -61,13 +67,16 @@ function modules() {
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
+  // PapperJs
+  var PapperJs = gulp.src('./node_modules/@popperjs/core/**/*')
+    .pipe(gulp.dest('./vendor/popperjs'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, swipercss, swiperjs);
 }
 
 // CSS task
