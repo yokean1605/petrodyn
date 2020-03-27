@@ -118,11 +118,12 @@ html, body {
 .swiper-container {
   width: 100%;
   height: 100%;
+  z-index: -2;
 }
 
 .swiper-container2, .swiper-container1 {
   .swiper-wrapper {
-    margin-bottom: 100px;
+    padding: 75px 0;
     .swiper-slide {
       &::after {
         content: ' ';
@@ -135,7 +136,8 @@ html, body {
         z-index: 1;
       }
       &.swiper-slide-active {
-        max-width: 355px;
+        max-width: 500px;
+        margin-top: 75px;
         &::after {
           z-index: -1;
         }
@@ -240,7 +242,11 @@ html, body {
 // }
 
 .bgc-asset {
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 400px;
+  &::before {
+    content: url('./../img/Asset4.png');
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
 }

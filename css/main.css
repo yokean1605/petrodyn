@@ -66,10 +66,11 @@ html, body {
 .swiper-container {
   width: 100%;
   height: 100%;
+  z-index: -2;
 }
 
 .swiper-container2 .swiper-wrapper, .swiper-container1 .swiper-wrapper {
-  margin-bottom: 100px;
+  padding: 75px 0;
 }
 
 .swiper-container2 .swiper-wrapper .swiper-slide::after, .swiper-container1 .swiper-wrapper .swiper-slide::after {
@@ -84,7 +85,8 @@ html, body {
 }
 
 .swiper-container2 .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper-container1 .swiper-wrapper .swiper-slide.swiper-slide-active {
-  max-width: 355px;
+  max-width: 500px;
+  margin-top: 75px;
 }
 
 .swiper-container2 .swiper-wrapper .swiper-slide.swiper-slide-active::after, .swiper-container1 .swiper-wrapper .swiper-slide.swiper-slide-active::after {
@@ -173,10 +175,12 @@ html, body {
   margin-bottom: .75rem;
 }
 
-.bgc-asset {
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 400px;
+.bgc-asset::before {
+  content: url("./../img/Asset4.png");
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
