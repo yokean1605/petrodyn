@@ -2,7 +2,17 @@
 
 body {
   @include body-font;
+  position: relative;
   background-color: #061836;
+  // &::before {
+  //   content: "";
+  //   background-color: rgba(0,0,51,.95);
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   display: block;
+  //   z-index: 0;
+  // }
 }
 
 
@@ -16,93 +26,37 @@ h6 {
   color: white;
 }
 
-// h1 {
-//   font-size: 6rem;
-//   line-height: 5.5rem;
-// }
-
-// h2 {
-//   font-size: 3.5rem;
-// }
-
-// h3 {
-//   font-size: 2rem;
-// }
-
-// p.lead {
-//   font-size: 1.15rem;
-//   font-weight: 400;
-// }
-
-// .subheading {
-//   text-transform: uppercase;
-//   font-weight: 500;
-//   @include heading-font;
-//   font-size: 1.5rem;
-// }
-
-// .social-icons {
-//   a {
-//     display: inline-block;
-//     height: 3.5rem;
-//     width: 3.5rem;
-//     background-color: $gray-700;
-//     color: $white !important;
-//     border-radius: 100%;
-//     text-align: center;
-//     font-size: 1.5rem;
-//     line-height: 3.5rem;
-//     margin-right: 1rem;
-//     &:last-child {
-//       margin-right: 0;
-//     }
-//     &:hover {
-//       background-color: $primary;
-//     }
-//   }
-// }
-
-// .dev-icons {
-//   font-size: 3rem;
-//   .list-inline-item i {
-//     &:hover {
-//       color: $primary;
-//     }
-//   }
-// }
-
-
-
-@font-face {
-	font-family: 'Stencil';
-	src: url('./../fonts/Cera\ Stencil\ PRO\ Medium.otf');
-	font-weight: 300;
+.title-org {
+  color: $c-org;
+  font-size: 40px;
+  font-family: $karla-b;
 }
 
-@font-face {
-	font-family: 'Karla-Regular';
-	src: url('./../fonts/Karla-Regular.ttf');
-	font-weight: 500 !important;
+.title-white {
+  color: white;
+  font-size: 65px;
+  line-height: 65px;
 }
 
-@font-face {
-	font-family: 'Karla-bold';
-	src: url('./../fonts/Karla-Bold.ttf');
+.text-paragrapt {
+  font-size: 17px;
+  color: white;
+  line-height: 27px;
 }
 
 .f-stencil {
-  font-family: 'Stencil';
+  font-family: $stencil;
 }
 .f-karla-r {
-  font-family: 'Karla-Regular';
+  font-family: $karla-r;
 }
 .f-karla-b {
-  font-family: 'Karla-Bold';
+  font-family: $karla-b;
 }
 
 .btn.btn-warning {
   font-size: 13px;
-  font-family: 'Karla-bold';
+  font-family: $karla-b;
 }
 
 section {
@@ -110,9 +64,22 @@ section {
   display: block;
 }
 
-html, body {
-  position: relative;
-  height: 100%;
+.breadcrumb-custom {
+  >.breadcrumb-item {
+    &.active, a{
+      color: #ECA900 !important;
+      font-family: $karla-r;
+      font-size: 17px;
+    }
+  }
+}
+.breadcrumb-item::before {
+  font-family: 'FontAwesome';
+  content: "\f105";
+}
+
+.title-pages {
+  font-size: 65px;
 }
 
 .swiper-container {

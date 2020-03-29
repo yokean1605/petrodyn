@@ -29,11 +29,19 @@ $primary:       $orange !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       #ECA900 !important;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+$c-org: #ECA900;
+
 // Page Variables
 
 $sidebar-base-width: 17rem;
+
+
+// fonts
+$karla-r: 'Karla-Regular';
+$karla-b: 'Karla-Bold';
+$stencil: 'Stencil';

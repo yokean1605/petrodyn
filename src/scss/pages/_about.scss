@@ -1,0 +1,114 @@
+.img-banner {
+    position: relative;
+    &::before {
+        content: '';
+        background-color: rgba(136, 132, 122, 0.4)!important;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+}
+
+.img-top {
+    position: absolute;
+    max-width: 390px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.img-bottom {
+    position: absolute;
+    max-width: 325px;
+    left: 0;
+    bottom: 0;
+}
+.img-left {
+    min-height: 550px;
+}
+
+.content-img2 {
+    position: absolute;
+    right: -180px;
+    top: 180px;
+    >.border {
+        text-align: left;
+        width: 154px;
+        height: 154px;
+        padding: 20px;
+        border-radius: 5px !important;
+        position: relative;
+        &::before {
+            content: url('./../../img/line.png');
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -214px;
+            top: 90px;
+        }
+    }
+}
+
+.content-product {
+    .images-product {
+        background-size: cover;
+        height: 238px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .content-product-paragraph {
+        border: 1px solid #808080;
+        border-radius: 0 5px;
+        padding: 15px;
+        color: white;
+        max-width: 275px;
+        float: right;
+        bottom: 39px;
+        background-color: #061836;
+        position: relative;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.img-product {
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-body-corporate {
+    background-color: #061836;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    h1.number {
+        font-family: $stencil;
+        color: #88847A;
+        font-size: 66px;
+        line-height: 66px;
+        margin-bottom: 30px;
+    }
+    .title-card-corporate {
+        font-family: $karla-r;
+        color: white;
+        height: 85px;
+        height: 90px;
+    }
+    .text-paragraph {
+        font-family: $karla-r;
+        font-size: 17px;
+        color: white;
+    }
+}
+
+.content-profile.excellence {
+    position: relative;
+    // &::after {
+    //     content: url(./../../img/bgc.png);
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-repeat: no-repeat;
+    // }
+}
