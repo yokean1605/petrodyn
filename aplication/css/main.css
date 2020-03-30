@@ -212,6 +212,39 @@ section {
   src: url("./../fonts/Karla-Bold.ttf");
 }
 
+div.pack {
+  display: flex;
+  margin-bottom: 10px;
+  /*box-sizing: border-box;*/
+}
+
+div.pack > * {
+  margin: 0;
+}
+
+div.pack > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+div.pack img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 560px) {
+  div.pack {
+    flex-wrap: wrap;
+  }
+  div.pack > * {
+    flex: 1 0 auto !important;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  div.pack > *:not(:last-child) {
+    margin-bottom: 10px !important;
+  }
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -486,6 +519,101 @@ section {
 
 .content-profile.excellence {
   position: relative;
+}
+
+.image-banner-client {
+  overflow: hidden;
+  height: 600px;
+}
+
+.image-banner-client:hover .content-hover {
+  display: block;
+}
+
+.image-banner-client .image-banner {
+  position: relative;
+}
+
+.image-banner-client .image-banner .content-image-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Karla-Bold";
+  font-size: 40px;
+  line-height: 27px;
+  width: 100%;
+  text-align: center;
+}
+
+.image-banner-client .image-banner::before {
+  content: '';
+  background-color: rgba(6, 24, 54, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.image-banner-client .image-banner:hover {
+  cursor: pointer;
+}
+
+.image-banner-client .image-banner:hover::before {
+  content: '';
+  background-color: rgba(147, 177, 40, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+}
+
+.image-banner-client .content-hover {
+  color: white;
+  font-size: 30px;
+  line-height: 27px;
+  font-family: "Karla-Regular";
+  position: relative;
+  top: 115px;
+  width: 100%;
+  display: block;
+  text-align: right;
+  display: none;
+}
+
+.blog-client {
+  padding: 100px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #88847A;
+}
+
+.blog-client > .paragraph {
+  margin-bottom: 100px;
+}
+
+.blog-client > .paragraph p {
+  color: white;
+  font-family: "Karla-Regular";
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.title-blog-client h3 {
+  color: #ECA900 !important;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Karla-Bold";
+}
+
+.subtitle-blog-client {
+  margin-bottom: 65px;
+}
+
+.subtitle-blog-client h3 {
+  color: #88847A;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Karla-Regular";
 }
 
 .bg-primary {

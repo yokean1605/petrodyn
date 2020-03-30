@@ -2,9 +2,12 @@
 @import "common/mixins.scss";
 @import "common/global.scss";
 @import "common/fonts.scss";
+@import "plugin/height.scss";
+@import "plugin/thickbox.scss";
 @import "partial/nav.scss";
 @import "partial/header.scss";
 @import "partial/footer.scss";
 @import "pages/homepage.scss";
 @import "pages/about.scss";
+@import "pages/client.scss";
 @import "bootstrap-overrides.scss";

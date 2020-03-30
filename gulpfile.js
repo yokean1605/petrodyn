@@ -73,6 +73,9 @@ function html() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
+  // fancyapps
+  var swiperjs = gulp.src('./node_modules/@fancyapps/fancybox/dist/*')
+    .pipe(gulp.dest('./aplication/vendor/fancybox/js'));
   // swiperjs
   var swiperjs = gulp.src('./node_modules/swiper/js/*')
     .pipe(gulp.dest('./aplication/vendor/swiper/js'));

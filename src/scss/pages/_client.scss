@@ -1,0 +1,86 @@
+.image-banner-client {
+    // min-height: 710px;
+    overflow: hidden;
+    height: 600px;
+    &:hover {
+        .content-hover {
+            display: block;
+        }
+    }
+    .image-banner {
+        position: relative;
+        // min-height: 562px;
+        .content-image-center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            font-family: $karla-b;
+            font-size: 40px;
+            line-height: 27px;
+            width: 100%;
+            text-align: center;
+        }
+        &::before {
+            content: '';
+            background-color: rgba(6, 24, 54, .5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        &:hover {
+            cursor: pointer;
+            &::before {
+                content: '';
+                background-color: rgba(147, 177, 40, .5);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: block;
+            }
+        }
+    }
+    .content-hover {
+        color: white;
+        font-size: 30px;
+        line-height: 27px;
+        font-family: $karla-r;
+        position: relative;
+        top: 115px;
+        width: 100%;
+        display: block;
+        text-align: right;
+        display: none;
+    }
+}
+
+.blog-client {
+    padding: 100px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #88847A;
+    >.paragraph {
+        margin-bottom: 100px;
+        p{
+            color: white;
+            font-family: $karla-r;
+            font-size: 17px;
+            line-height: 27px;
+        }
+    }
+}
+.title-blog-client h3 {
+    color: $warning;    
+    font-size: 40px;
+    line-height: 48px;
+    font-family: $karla-b;
+}
+.subtitle-blog-client {
+    margin-bottom: 65px;
+    h3{
+        color: #88847A;    
+        font-size: 30px;
+        line-height: 40px;
+        font-family: $karla-r;
+    }
+}
