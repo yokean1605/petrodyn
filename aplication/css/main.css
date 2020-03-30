@@ -460,6 +460,7 @@ section {
   border: 1px solid #808080;
   border-radius: 5px;
   padding-bottom: 30px;
+  min-height: 350px;
 }
 
 .card-body-corporate h1.number {
