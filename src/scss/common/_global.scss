@@ -217,3 +217,17 @@ section {
     top: 0;
   }
 }
+
+.banner {
+  overflow: hidden;
+  max-height: 517px;
+}
+
+.form-custom {
+  border-color: $border;
+  border-radius: 0px;
+}
+
+.form-group-custom {
+  margin-bottom: 55px;
+}

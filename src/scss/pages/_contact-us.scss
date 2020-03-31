@@ -1,0 +1,53 @@
+.addrees-content {
+    margin-bottom: 40px;
+}
+.address-content-title {
+    h1 {
+        font-family: $karla-b;
+        color: #0E0C55;
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+.address-item {
+    color: #88847A;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: $karla-r;
+}
+.maps {
+    min-height: 515px;
+    position: relative;
+    iframe {
+        height: 100%;
+        position: absolute;
+    }
+}
+.maps-content {
+    display: none;
+    .maps-content-item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+    }
+    .maps-content-item-box {
+        background-color: rgba(255,255,255, .81);
+        width: 375px;
+        height: auto;
+        padding: 30px;
+        >h1.title {
+            font-size: 30px;
+            line-height: 40px;
+            font-family: $karla-r;
+            color: #061841;
+        }
+        >.address-maps {
+            font-family: $karla-r;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+}
