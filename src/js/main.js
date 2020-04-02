@@ -53,3 +53,7 @@
 $(window).on('load', function() {
   $("div.pack").pack();
 });
+
+window.FontAwesomeConfig = {
+  searchPseudoElements: true
+}

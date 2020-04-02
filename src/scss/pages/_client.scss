@@ -1,5 +1,4 @@
 .image-banner-client {
-    // min-height: 710px;
     overflow: hidden;
     height: 600px;
     &:hover {
@@ -7,21 +6,8 @@
             display: block;
         }
     }
-    .image-banner {
+    >.image-banner {
         position: relative;
-        // min-height: 562px;
-        .content-image-center {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            color: white;
-            font-family: $karla-b;
-            font-size: 40px;
-            line-height: 27px;
-            width: 100%;
-            text-align: center;
-        }
         &::before {
             content: '';
             background-color: rgba(6, 24, 54, .5);
@@ -41,7 +27,7 @@
             }
         }
     }
-    .content-hover {
+    >.content-hover {
         color: white;
         font-size: 30px;
         line-height: 27px;
@@ -53,6 +39,19 @@
         text-align: right;
         display: none;
     }
+}
+
+.content-image-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: $karla-b;
+    font-size: 40px;
+    line-height: 27px;
+    width: 100%;
+    text-align: center;
 }
 
 .blog-client {

@@ -200,6 +200,32 @@ section {
   max-height: 517px;
 }
 
+.img-banner {
+  position: relative;
+}
+
+.img-banner::before {
+  content: '';
+  background-color: rgba(136, 132, 122, 0.4) !important;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.img-banner .content-img-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Karla-Regular";
+  font-size: 40px;
+  line-height: 27px;
+  width: 100%;
+  text-align: center;
+}
+
 .form-custom {
   border-color: #88847A;
   border-radius: 0px;
@@ -419,19 +445,6 @@ div.pack img {
   color: white;
 }
 
-.img-banner {
-  position: relative;
-}
-
-.img-banner::before {
-  content: '';
-  background-color: rgba(136, 132, 122, 0.4) !important;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-}
-
 .img-top {
   position: absolute;
   max-width: 390px;
@@ -544,24 +557,11 @@ div.pack img {
   display: block;
 }
 
-.image-banner-client .image-banner {
+.image-banner-client > .image-banner {
   position: relative;
 }
 
-.image-banner-client .image-banner .content-image-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Karla-Bold";
-  font-size: 40px;
-  line-height: 27px;
-  width: 100%;
-  text-align: center;
-}
-
-.image-banner-client .image-banner::before {
+.image-banner-client > .image-banner::before {
   content: '';
   background-color: rgba(6, 24, 54, 0.5);
   width: 100%;
@@ -569,11 +569,11 @@ div.pack img {
   position: absolute;
 }
 
-.image-banner-client .image-banner:hover {
+.image-banner-client > .image-banner:hover {
   cursor: pointer;
 }
 
-.image-banner-client .image-banner:hover::before {
+.image-banner-client > .image-banner:hover::before {
   content: '';
   background-color: rgba(147, 177, 40, 0.5);
   width: 100%;
@@ -582,7 +582,7 @@ div.pack img {
   display: block;
 }
 
-.image-banner-client .content-hover {
+.image-banner-client > .content-hover {
   color: white;
   font-size: 30px;
   line-height: 27px;
@@ -593,6 +593,19 @@ div.pack img {
   display: block;
   text-align: right;
   display: none;
+}
+
+.content-image-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Karla-Bold";
+  font-size: 40px;
+  line-height: 27px;
+  width: 100%;
+  text-align: center;
 }
 
 .blog-client {
@@ -688,6 +701,98 @@ div.pack img {
   font-family: "Karla-Regular";
   font-size: 14px;
   line-height: 26px;
+}
+
+.aftermartket-content {
+  padding: 75px 0;
+}
+
+.banner-web {
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.banner-web::before {
+  content: '';
+  background-color: rgba(136, 132, 122, 0.49);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-web > .image-banner::before {
+  content: '';
+  background-color: rgba(6, 24, 54, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-web > .image-banner > .content-image-center {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.content-market {
+  color: #88847a;
+  font-family: "Karla-Regular";
+  line-height: 27px;
+  font-size: 17px;
+}
+
+.img-content-market2 {
+  position: relative;
+}
+
+.img-content-market2::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #eca900;
+  width: 155px;
+  height: 155px;
+  border-radius: 8px;
+  right: -50px;
+  bottom: -50px;
+}
+
+.img-market {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.space-img {
+  padding: 0 10px 10px 0;
+}
+
+.box-market::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #eca900;
+  width: 245px;
+  height: 245px;
+  border-radius: 8px;
+  left: -100px;
+  bottom: -100px;
+}
+
+ul.ul-custom {
+  list-style: none;
+}
+
+ul.ul-custom li i {
+  margin-right: 15px;
+  line-height: 27px;
+  color: #0e0c55;
+}
+
+ul.ul-custom li span {
+  font-family: "Karla-Regular";
+  font-size: 17px;
+  line-height: 27px;
+  color: #0e0c55;
 }
 
 .bg-primary {
