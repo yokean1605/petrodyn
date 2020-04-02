@@ -795,6 +795,48 @@ ul.ul-custom li span {
   color: #0e0c55;
 }
 
+.banner-news-heading {
+  min-height: 550px;
+}
+
+.banner-news-heading .image-banner-news {
+  min-height: 695px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+
+.content-news-heading {
+  background-color: #ececec;
+  padding-top: 240px;
+}
+
+.date-news > h1 {
+  font-family: "Karla-Regular";
+  color: #061841;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.content-date-news > * {
+  font-family: "Karla-Regular";
+  color: #88847a;
+}
+
+.swiper-containerNews {
+  z-index: inherit;
+}
+
+#sbn3, #sbp3 {
+  color: #88847a;
+}
+
+.title-galery {
+  font-size: 65px;
+  line-height: 66px;
+}
+
 .bg-primary {
   background-color: #BD5D38 !important;
 }

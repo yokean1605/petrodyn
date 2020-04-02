@@ -48,6 +48,19 @@
       prevEl: '#sbp2',
     }
   });
+
+  var swiper3 = new Swiper('.swiper-containerNews', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#sbn3',
+      prevEl: '#sbp3',
+    }
+  });
 })(jQuery);
 
 $(window).on('load', function() {
