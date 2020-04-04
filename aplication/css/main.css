@@ -17,7 +17,7 @@ body::before {
   height: 100%;
   position: absolute;
   display: block;
-  z-index: -1;
+  z-index: -2;
 }
 
 h1,
@@ -83,7 +83,7 @@ section {
 .swiper-container {
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .swiper-container2 .swiper-wrapper, .swiper-container1 .swiper-wrapper {
@@ -103,11 +103,14 @@ section {
 
 .swiper-container2 .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper-container1 .swiper-wrapper .swiper-slide.swiper-slide-active {
   max-width: 500px;
-  margin-top: 75px;
 }
 
 .swiper-container2 .swiper-wrapper .swiper-slide.swiper-slide-active::after, .swiper-container1 .swiper-wrapper .swiper-slide.swiper-slide-active::after {
   z-index: -1;
+}
+
+.swiper-container2 .swiper-wrapper .swiper-slide.swiper-slide-active {
+  margin-top: 75px;
 }
 
 .caption {
@@ -414,7 +417,7 @@ ul.navbar-nav {
 ul.navbar-nav:after {
   content: " ";
   position: absolute;
-  background: url("./../../img/triangle.png");
+  background: url("./../img/triangle.png");
   display: block;
   width: 16px;
   height: 49.8px;
@@ -510,7 +513,7 @@ ul.navbar-nav:after {
 }
 
 .content-img2 > .border::before {
-  content: url("./../../img/line.png");
+  content: url("./../img/line.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -579,12 +582,12 @@ ul.navbar-nav:after {
 }
 
 .content-profile.excellence::after {
-  content: url(./../../img/bgc.png);
+  content: url(./../img/bgc.png);
   position: absolute;
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: -3;
 }
 
 .image-banner-client {

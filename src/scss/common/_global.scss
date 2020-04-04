@@ -11,7 +11,7 @@ body {
     height: 100%;
     position: absolute;
     display: block;
-    z-index: -1;
+    z-index: -2;
   }
 }
 
@@ -81,7 +81,7 @@ section {
 .swiper-container {
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .swiper-container2, .swiper-container1 {
@@ -100,10 +100,19 @@ section {
       }
       &.swiper-slide-active {
         max-width: 500px;
-        margin-top: 75px;
         &::after {
           z-index: -1;
         }
+      }
+    }
+  }
+}
+
+.swiper-container2{
+  .swiper-wrapper {
+    .swiper-slide {
+      &.swiper-slide-active {
+        margin-top: 75px;
       }
     }
   }
