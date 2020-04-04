@@ -335,6 +335,11 @@ div.pack img {
   }
 }
 
+header {
+  position: relative;
+  top: -95px;
+}
+
 .carousel-caption > h3 {
   font-family: 'Stencil';
   color: white;
@@ -389,6 +394,7 @@ div.pack img {
   background-repeat: no-repeat;
   margin-top: 30px;
   background-position: right;
+  z-index: 999;
 }
 
 .nav-item .nav-link {
