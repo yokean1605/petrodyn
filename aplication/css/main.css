@@ -837,6 +837,51 @@ ul.ul-custom li span {
   line-height: 66px;
 }
 
+.content-product {
+  background-color: #ececec;
+}
+
+.row > .b-left {
+  border-right: 2px solid #c6c6c6;
+}
+
+.card-product > .card-header {
+  font-family: "Karla-Regular";
+  font-size: 26px;
+  line-height: 27px;
+  color: #88847a;
+  margin-bottom: auto !important;
+  border-bottom: 2px solid #c6c6c6 !important;
+  position: relative;
+}
+
+.card-product > .card-header h2.title-collapse {
+  font-family: "Karla-Regular";
+  font-size: 30px;
+  line-height: 40px;
+  color: #061841;
+}
+
+.card-product > .card-header i.fas {
+  position: absolute;
+  right: 15px;
+  top: 32px;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.content-item-product {
+  padding: 30px;
+}
+
+.content-item-product .title-content-item-product {
+  font-family: "Karla-Regular";
+  color: #061841;
+  font-size: 37px;
+  line-height: 40px;
+}
+
 .bg-primary {
   background-color: #BD5D38 !important;
 }
