@@ -411,7 +411,7 @@ header {
 ul.navbar-nav {
   background-color: #88847a;
   position: relative;
-  padding-right: 10%;
+  padding-right: 9%;
 }
 
 ul.navbar-nav:after {
