@@ -51,10 +51,29 @@ header {
 }
 
 .bg-nav {
-    background-repeat: no-repeat;
-    margin-top: 30px;
-    background-position: right;
+    background-color: transparent !important;
     z-index: 999;
+    padding-top: 25px !important;
+}
+
+.navbar-dark .navbar-brand {
+    margin-left: 10%;
+}
+
+ul.navbar-nav {
+    background-color: #88847a;
+    position: relative;
+    padding-right: 10%;
+    &:after {
+        content: " ";
+        position: absolute;
+        background: url('./../../img/triangle.png');
+        display: block;
+        width: 16px;
+        height: 49.8px;
+        background-size: 100%;
+        left: -15.1px;
+    }
 }
 
 .nav-item {
@@ -63,7 +82,6 @@ header {
         font-size: 13px;
         line-height: 15.6px;
         color: white !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding: 17px 20px !important;
     }
 }

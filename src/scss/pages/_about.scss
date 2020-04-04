@@ -95,11 +95,12 @@
 
 .content-profile.excellence {
     position: relative;
-    // &::after {
-    //     content: url(./../../img/bgc.png);
-    //     position: absolute;
-    //     right: 0;
-    //     bottom: 0;
-    //     background-repeat: no-repeat;
-    // }
+    &::after {
+        content: url(./../../img/bgc.png);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
 }

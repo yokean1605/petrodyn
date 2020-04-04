@@ -7,7 +7,17 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   position: relative;
-  background-color: #061836;
+  background-color: white;
+}
+
+body::before {
+  content: "";
+  background-color: rgba(0, 0, 51, 0.95);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: -1;
 }
 
 h1,
@@ -66,11 +76,6 @@ section {
   font-size: 17px;
 }
 
-.breadcrumb-item::before {
-  font-family: 'FontAwesome';
-  content: "\f105";
-}
-
 .title-pages {
   font-size: 65px;
 }
@@ -78,7 +83,7 @@ section {
 .swiper-container {
   width: 100%;
   height: 100%;
-  z-index: -2;
+  z-index: -1;
 }
 
 .swiper-container2 .swiper-wrapper, .swiper-container1 .swiper-wrapper {
@@ -391,10 +396,30 @@ header {
 }
 
 .bg-nav {
-  background-repeat: no-repeat;
-  margin-top: 30px;
-  background-position: right;
+  background-color: transparent !important;
   z-index: 999;
+  padding-top: 25px !important;
+}
+
+.navbar-dark .navbar-brand {
+  margin-left: 10%;
+}
+
+ul.navbar-nav {
+  background-color: #88847a;
+  position: relative;
+  padding-right: 10%;
+}
+
+ul.navbar-nav:after {
+  content: " ";
+  position: absolute;
+  background: url("./../../img/triangle.png");
+  display: block;
+  width: 16px;
+  height: 49.8px;
+  background-size: 100%;
+  left: -15.1px;
 }
 
 .nav-item .nav-link {
@@ -402,8 +427,7 @@ header {
   font-size: 13px;
   line-height: 15.6px;
   color: white !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding: 17px 20px !important;
 }
 
 .footer {
@@ -552,6 +576,15 @@ header {
 
 .content-profile.excellence {
   position: relative;
+}
+
+.content-profile.excellence::after {
+  content: url(./../../img/bgc.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  z-index: -2;
 }
 
 .image-banner-client {
