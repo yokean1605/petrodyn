@@ -6,6 +6,11 @@
         border-right: 2px solid #c6c6c6;
     }
 }
+
+.cursor-collapse > i{
+    cursor: pointer;
+}
+
 .card-product {
     >.card-header {
         font-family: $karla-r;

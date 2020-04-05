@@ -887,6 +887,10 @@ ul.ul-custom li span {
   border-right: 2px solid #c6c6c6;
 }
 
+.cursor-collapse > i {
+  cursor: pointer;
+}
+
 .card-product > .card-header {
   font-family: "Karla-Regular";
   font-size: 26px;
