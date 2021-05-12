@@ -41,6 +41,6 @@
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.2",
         "merge-stream": "2.0.0",
-        "swiper": "^5.3.6"
+        "swiper": "^6.5.1"
     }
 }
